@@ -11,3 +11,7 @@ $ docker-compose up
 ```sh
 sudo docker exec -it react-app-container sh
 ```
+
+```
+npm install react-admin
+```
