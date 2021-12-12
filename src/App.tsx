@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <div className="App">
       <h1>Please wait a moment now</h1>
-      <Countdown date={Date.now() + 10000} />
+      <Countdown date={Date.now() + 300000} />
     </div>
   );
 };
