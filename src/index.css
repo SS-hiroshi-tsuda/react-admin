@@ -1,3 +1,11 @@
 body {
   margin: 0;
+  color: #708090;/* 文字色 */
+  background-color: #ffffff;            /* 背景色 */
+  background-image: url("forest.jpg"); /* 画像 */
+  background-size: cover;               /* 全画面 */
+  background-attachment: fixed;         /* 固定 */
+  background-position: center center;   /* 縦横中央 */
 }
+
+.wf-kokoro { font-family: "Kokoro"; }
