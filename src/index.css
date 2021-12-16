@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  color: #708090;/* 文字色 */
-  background-color: #ffffff;            /* 背景色 */
+  color: #ffffff;/* 文字色 */
+  background-color: #708090;            /* 背景色 */
   background-image: url("forest.jpg"); /* 画像 */
   background-size: cover;               /* 全画面 */
   background-attachment: fixed;         /* 固定 */
@@ -9,3 +9,32 @@ body {
 }
 
 .wf-kokoro { font-family: "Kokoro"; }
+
+.container{
+  border: solid 1px black;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+
+}
+ .container p {
+  left: 100%;
+  margin:0;
+  display:inline-block; 
+  white-space:nowrap;
+  animation-name:marquee; /*アニメーションのクラス名*/
+  animation-timing-function:linear;/*アニメーションのタイミング・進行割合の指定*/
+  animation-duration:10s; /*アニメーションの速度*/
+  animation-iteration-count:infinite;/*アニメーションの動作回数*/
+  position:absolute;
+  display: inline-block;
+}
+.container p:hover{
+    animation-play-state: paused;
+}
+@keyframes marquee {
+  from   { left: 100%;} 
+  99%,to { left: -100%;}
+}
